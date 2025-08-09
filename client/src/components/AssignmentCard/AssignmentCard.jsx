@@ -48,27 +48,19 @@ export default function AssignmentCard({ assignment, refetch }) {
         />
         <div className="mt-4 space-y-1">
           <CardTitle>{title}</CardTitle>
-          <p className="text-muted-foreground text-sm line-clamp-2">
+          <p className="text-muted-foreground text-sm line-clamp-2 mt-2">
             {description}
           </p>
         </div>
       </CardHeader>
 
-      <CardContent className="flex justify-between text-sm">
-        <Badge variant="secondary">{difficulty}</Badge>
-        <span>Marks: {marks}</span>
-      </CardContent>
+     
 
       <CardFooter className="flex justify-between items-center">
-        <div className="text-xs text-muted-foreground">
-          <span>By: {creator?.name}</span>
-          <br />
-          <span>Due: {new Date(dueDate).toLocaleDateString()}</span>
-        </div>
         <div className="flex gap-2">
           <Link to={`/assignment/${_id}`}>
-            <Button size="sm" variant="outline">
-              View
+            <Button width="full" size="sm" variant="outline">
+              View More
             </Button>
           </Link>
           {user?.email === creator?.email && (

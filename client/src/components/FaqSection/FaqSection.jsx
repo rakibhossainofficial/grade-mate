@@ -7,7 +7,7 @@ import {
 
 export default function FaqSection() {
   return (
-    <section className="max-w-3xl mx-auto my-8">
+    <section className="max-w-3xl mx-auto my-8 px-6">
       <h2 className="text-3xl font-bold text-center mb-6">
         Frequently Asked Questions
       </h2>
