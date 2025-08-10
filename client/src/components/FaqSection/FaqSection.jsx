@@ -68,15 +68,6 @@ export default function FaqSection() {
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="q6">
-          <AccordionTrigger>
-            Can I use Google login instead of email/password?
-          </AccordionTrigger>
-          <AccordionContent>
-            Absolutely. The platform supports secure Google-based social login,
-            making sign-in quick and seamless.
-          </AccordionContent>
-        </AccordionItem>
       </Accordion>
     </section>
   );
