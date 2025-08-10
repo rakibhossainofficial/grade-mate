@@ -7,13 +7,13 @@ import {
 
 export default function FaqSection() {
   return (
-    <section className="max-w-3xl mx-auto my-8">
+    <section className="px-5 mx-auto my-8">
       <h2 className="text-3xl font-bold text-center mb-6">
         Frequently Asked Questions
       </h2>
       <Accordion type="single" collapsible className="w-full space-y-2">
         <AccordionItem value="q1">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-[18px] cursor-pointer">
             What is GradeMate and who can use it?
           </AccordionTrigger>
           <AccordionContent>
@@ -25,7 +25,7 @@ export default function FaqSection() {
         </AccordionItem>
 
         <AccordionItem value="q2">
-          <AccordionTrigger>
+          <AccordionTrigger  className="text-[18px] cursor-pointer">
             How does the assignment grading system work?
           </AccordionTrigger>
           <AccordionContent>
@@ -37,7 +37,7 @@ export default function FaqSection() {
         </AccordionItem>
 
         <AccordionItem value="q3">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-[18px] cursor-pointer">
             Can I delete or update assignments I didn't create?
           </AccordionTrigger>
           <AccordionContent>
@@ -48,7 +48,7 @@ export default function FaqSection() {
         </AccordionItem>
 
         <AccordionItem value="q4">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-[18px] cursor-pointer">
             Is the platform secure and mobile-friendly?
           </AccordionTrigger>
           <AccordionContent>
@@ -59,7 +59,7 @@ export default function FaqSection() {
         </AccordionItem>
 
         <AccordionItem value="q5">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-[18px] cursor-pointer">
             Can I use Google login instead of email/password?
           </AccordionTrigger>
           <AccordionContent>
