@@ -7,11 +7,11 @@ import {
 
 export default function FaqSection() {
   return (
-    <section className="max-w-3xl mx-auto my-8 px-6">
+    <section className="w-full mx-auto my-8 px-6">
       <h2 className="text-3xl font-bold text-center mb-6">
         Frequently Asked Questions
       </h2>
-      <Accordion type="single" collapsible className="w-full space-y-2">
+      <Accordion type="single" collapsible className="space-y-2 text-2xl">
         <AccordionItem value="q1">
           <AccordionTrigger>
             What is GradeMate and who can use it?
@@ -59,6 +59,16 @@ export default function FaqSection() {
         </AccordionItem>
 
         <AccordionItem value="q5">
+          <AccordionTrigger>
+            Can I use Google login instead of email/password?
+          </AccordionTrigger>
+          <AccordionContent>
+            Absolutely. The platform supports secure Google-based social login,
+            making sign-in quick and seamless.
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="q6">
           <AccordionTrigger>
             Can I use Google login instead of email/password?
           </AccordionTrigger>
