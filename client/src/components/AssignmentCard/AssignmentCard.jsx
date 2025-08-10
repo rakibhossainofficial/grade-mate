@@ -54,11 +54,7 @@ export default function AssignmentCard({ assignment, refetch }) {
         </div>
       </CardHeader>
 
-      <CardContent className="flex justify-between text-sm">
-        <Badge variant="secondary">{difficulty}</Badge>
-        <span>Marks: {marks}</span>
-      </CardContent>
-
+     
       <CardFooter className="flex justify-between items-center">
         <div className="text-xs text-muted-foreground">
           <span>By: {creator?.name}</span>
@@ -68,7 +64,7 @@ export default function AssignmentCard({ assignment, refetch }) {
         <div className="flex gap-2">
           <Link to={`/assignment/${_id}`}>
             <Button size="sm" variant="outline">
-              View
+              View More
             </Button>
           </Link>
           {user?.email === creator?.email && (
